@@ -1,7 +1,9 @@
 # Composer - How To Code Well
 
 This creates a Composer Docker image that has some PHP extensions configured. 
-Each Docker tag will follow PHP versions. See all available tags here:
+Each Docker tag will follow PHP versions. 
+
+See all available tags on the [Docker Hub](https://hub.docker.com/repository/docker/howtocodewell/composer/tags)
 
 ## To build locally
 `docker build -t howtocodewell/composer:<TAG> .`
