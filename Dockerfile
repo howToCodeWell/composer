@@ -18,7 +18,7 @@ RUN apt-get install -y --no-install-recommends  \
 
 RUN pecl install xdebug-2.9.8 && docker-php-ext-enable xdebug
 
-COPY --from=composer /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.0.8 /usr/bin/composer /usr/bin/composer
 
 RUN apt-get clean autoclean \
     && apt-get autoremove --yes \
